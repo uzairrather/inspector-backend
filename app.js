@@ -14,7 +14,7 @@ app.set('trust proxy', 1);
 // ✅ Fix 2: Proper CORS config
 app.use(cors({
   origin: function (origin, callback) {
-    const allowedOrigins = ['http://localhost:5000', 'https://inspector-chi.vercel.app'];
+    const allowedOrigins = ['http://localhost:5173', 'https://inspector-frontend.vercel.app'];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
